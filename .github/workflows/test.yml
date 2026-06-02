@@ -1,0 +1,21 @@
+name: Test saidai.sh
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+
+      - name: スクリプトに実行権限を付与
+        run: chmod +x saidai.sh test-saidai.sh
+
+      - name: テスト実行
+        run: ./test-saidai.sh
