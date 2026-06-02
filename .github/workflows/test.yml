@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: リポジトリをチェックアウト
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: スクリプトに実行権限を付与
         run: chmod +x saidai.sh test-saidai.sh
