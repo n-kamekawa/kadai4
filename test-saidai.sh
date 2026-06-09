@@ -55,14 +55,14 @@ echo ""
 
 # 異常系テスト
 echo "--- 異常系テスト ---"
-test_error "引数が1つだけ → エラー終了" 3
-test_error "引数なし → エラー終了"
-test_error "文字列を入力 → エラー終了" abc def
-test_error "文字と数字を入力 → エラー終了" abc 4
-test_error "数字と文字を入力 → エラー終了" 4 abc
-test_error "0を入力 → エラー終了" 0 5
-test_error "負の数を入力 → エラー終了" -3 5
-test_error "小数を入力 → エラー終了" 3.5 2
+test_error "引数が1つだけ: エラー終了" 3
+test_error "引数なし: エラー終了"
+test_error "文字列を入力: エラー終了" abc def
+test_error "文字と数字を入力: エラー終了" abc 4
+test_error "数字と文字を入力: エラー終了" 4 abc
+test_error "0を入力: エラー終了" 0 5
+test_error "負の数を入力: エラー終了" -3 5
+test_error "小数を入力: エラー終了" 3.5 2
 
 echo ""
 echo "=== テスト結果 ==="
